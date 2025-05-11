@@ -13,7 +13,7 @@ const ParticipantsPage = () => {
     const fetchParticipants = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/event/getallparticipants/${id}`
+          `${process.env.NEXT_PUBLIC_BASE_URL}/event/getallparticipants/${id}`
         );
         const event = response.data.data;
         console.log("Participants:", event.participant);

@@ -33,7 +33,7 @@ const Page: React.FC = () => {
     
 
     try {
-      const response = await axios.post('http://localhost:8000/user/registeruser',   {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/user/registeruser`,   {
          fullname,
          email,
          password

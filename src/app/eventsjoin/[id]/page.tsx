@@ -19,7 +19,7 @@ const Page = () => {
             console.log("token", token);
 
             const response = await axios.post(
-                `http://localhost:8000/event/joinevent/${id}`,
+                `${process.env.NEXT_PUBLIC_BASE_URL}/event/joinevent/${id}`,
                 {},
                 {
                     headers: {

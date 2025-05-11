@@ -27,7 +27,7 @@ const ClubPage = () => {
   useEffect(() => {
     const fetchClubs = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/club/getclub")
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/club/getclub`)
         console.log(response.data.data)
         setClubs(response.data.data)
       } catch (error) {
