@@ -48,7 +48,7 @@ export default function EventsList() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/event/getevents")
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/event/getevents`)
         console.log(response.data.data)
         setEvents(response.data.data)
       } catch (error) {
