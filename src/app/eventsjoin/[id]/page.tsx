@@ -63,7 +63,7 @@ const Page = () => {
                             onClick={() => window.location.href = '/events'}
                             className="mt-4 px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
                         >
-                            View All Events
+                            View All Event
                         </button>
                     </div>
                 ) : (
