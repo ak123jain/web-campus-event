@@ -29,8 +29,7 @@ const ClubPage = () => {
       try {
         const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/club/getclub` , {
           headers: {
-            'Content-Type': 'application/json' , 
-            'Authorization': `Bearer ${localStorage.getItem('accessToken')}`
+            'Content-Type': 'application/json' 
           }
         })
         console.log(response.data.data)
