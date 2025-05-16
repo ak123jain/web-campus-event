@@ -201,6 +201,7 @@
 // }
 
 
+"use client";
 
 import { useState, useEffect } from "react";
 import { CalendarDays, MapPin, ArrowRight } from "lucide-react";
