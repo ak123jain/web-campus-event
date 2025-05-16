@@ -26,7 +26,7 @@ export default function CurvedNavbar() {
         <div className="flex items-center gap-4">
           <Link href="/signup">
             <Button className="bg-gradient-to-r cursor-pointer from-orange-500 to-orange-600 text-white font-medium px-4">
-              Get Started
+              Sign Up
             </Button>
           </Link>
         </div>
